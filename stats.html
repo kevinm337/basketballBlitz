@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Players Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="optionsmenu">
+        <h1>NBA</h1>
+        <ul class="menu">
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="matches.html">MATCHES</a></li>
+            <li><a href="standings.html">STANDINGS</a></li>
+            <li><a href="stats.html">STATS</a></li>
+        </ul>
+    </div>
+    <h2>NBA Players Stats - 2023 Season</h2>
+    <div class="menu-bar">
+        <button id="loadScorers">Top Scorers</button>
+        <button id="loadAssists">Top Assisters</button>
+        <button id="loadRebounds">Top Rebounders</button>
+    </div>
+    <table id="playersTable">
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Age</th>
+                <th>Team</th>
+                <th>Games Started</th>
+                <!-- These headers can change based on the data displayed -->
+                <th>Stat 1</th>
+                <th>Stat 2</th>
+                <th>Stat 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be loaded here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

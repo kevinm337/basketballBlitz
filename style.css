@@ -1,0 +1,173 @@
+/* Base styles for body, headings, and links */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #FFFFFF; 
+  background-color: #333; /* Neutral dark grey */
+  padding: 10px 0;
+  margin: 10px 0;
+  text-align: center; /* Ensure titles are centered */
+}
+
+/* Navigation menu styles */
+.optionsmenu {
+  background-color: black;
+  padding: 0 10px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  color: #FFFFFF; /* Change menu links to white for readability */
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #CCCCCC; /* Light grey for hover state */
+  text-decoration: none; /* No underline on hover */
+}
+
+.container {
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: auto; /* Center the container */
+  padding: 20px;
+  width: 100%; /* Ensure it spans the width of the viewport */
+}
+
+/* Table styles for data display */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Set a specific width */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Center-align text in headers and cells */
+}
+
+th {
+  background-color: #333; /* Dark grey background for headers */
+  color: #fff;
+}
+
+/* Styles for news items */
+.news-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto; /* Auto margins for horizontal centering */
+  background-color: #fff;
+  width: 80%; /* Define a width for the news items */
+  max-width: 600px; /* Maximum width for large screens */
+}
+
+.news-text {
+  text-align: left;
+}
+
+.news-source {
+  color: #888;
+  font-style: italic;
+}
+
+/* Link styles for news articles */
+.news-link {
+  color: black; /* Make news links black */
+  text-decoration: none; /* No underline */
+}
+
+.news-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Button styles for interactive elements */
+button {
+  background-color: #004080; /* Dark blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0055a5; /* Lighter blue */
+}
+
+button.active {
+  background-color: #002744; /* Even darker blue */
+}
+
+.page-title {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.fixture-list {
+  list-style-type: none;
+  padding: 0;
+  width: 800px; /* Define width to contain fixture boxes */
+  margin: 20px auto;
+}
+
+.fixture-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%; /* Make width consistent for all items */
+  height: 60px; /* Set a fixed height for uniformity */
+}
+
+.team-image {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+}
+
+.home-team, .away-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Allows for equal spacing on both sides of the vs text */
+}
+
+.vs-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 20px;
+  width: 50px; /* Fixed width to help center the text */
+}
+
+/* Center the list of fixtures */
+.fixture-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
